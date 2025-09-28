@@ -6,10 +6,9 @@
     <title>{{page_title}}</title>
 </head>
 <body>
-    <p>Name is {{user_name}}</p>
-    <p>Name is {{user_name}}</p>
-    <p>Name is {{user_name}}</p>
-    <p>Name is {{user_name}}</p>
-    <p>Name is {{user_name}}</p>
+    <h1>Welcome {{user_name}}</h1>
+    {% for item in shoppinglist %}
+     <li>{{ item }}</li>
+    {% endfor %} 
 </body>
 </html>
